@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+<body class="body-container">
+  <header class="header-container">
+    <img src="./eisenhower-matrix.jpg" class="header-container__image" alt="matrix">
+    <a class="header-container__link" href="https://goal-life.com/page/method/matrix-eisenhower">
+        Want more details?
+    </a>
+  </header>
+  <main class="main-page">
+    <section class="tasks">
+      <h3 class="tasks__title title-1">Add Item</h3>
+      <div class="task-row-wrapper">
+        <input id="new-task" class="tasks__text tasks__add-new" type="text">
+        <button class="btn">Add</button>
+      </div>
+    </section>
+    <section class="tasks">
+      <h3 class="tasks__title">Todo</h3>
+      <ul class="tasks__list incomplete-tasks">
+        <li class="tasks__item">
+          <input class="tasks__check" type="checkbox">
+          <label class="tasks__text tasks__label">Pay Bills</label>
+          <input type="text" class="tasks__text text-to-edit">
+          <button class="edit btn">Edit</button>
+          <button class="delete btn">
+            <img src="./remove.svg" class="btn_img" alt="remove">
+          </button>
+        </li>
+        <li class="edit-mode tasks__item">
+          <input class="tasks__check" type="checkbox">
+          <label class="tasks__text tasks__label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="tasks__text  text-to-edit">
+          <button class="edit btn">Save</button>
+          <button class="delete btn">
+            <img src="./remove.svg" class="btn_img" alt="remove"></button>
+          </li>
+      </ul>
+    </section>
+    <section class="tasks">
+      <h3 class="tasks__title">Completed</h3>
+      <ul class="completed-tasks tasks__list">
+        <li class="tasks__item">
+          <input type="checkbox" checked>
+          <label class="tasks__text tasks__label">See the Doctor</label>
+          <input type="text" class="tasks__text  text-to-edit">
+          <button class="edit btn">Edit</button>
+          <button class="delete btn">
+            <img src="./remove.svg" class="btn_img" alt="remove">
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
